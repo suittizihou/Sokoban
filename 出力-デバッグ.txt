@@ -1,0 +1,4 @@
+﻿'Sokoban.exe' (CLR v4.0.30319: DefaultDomain): 'C:\Windows\Microsoft.Net\assembly\GAC_32\mscorlib\v4.0_4.0.0.0__b77a5c561934e089\mscorlib.dll' が読み込まれました。シンボルの読み込みをスキップしました。モジュールは最適化されていて、デバッグ オプションの [マイ コードのみ] 設定が有効になっています。
+'Sokoban.exe' (CLR v4.0.30319: DefaultDomain): 'E:\VisualStudioProgram\Sokoban\Sokoban\bin\Debug\Sokoban.exe' が読み込まれました。シンボルが読み込まれました。
+'Sokoban.exe' (CLR v4.0.30319: Sokoban.exe): 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll' が読み込まれました。シンボルの読み込みをスキップしました。モジュールは最適化されていて、デバッグ オプションの [マイ コードのみ] 設定が有効になっています。
+プログラム '[27444] Sokoban.exe' はコード 0 (0x0) で終了しました。
