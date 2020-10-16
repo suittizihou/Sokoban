@@ -108,6 +108,9 @@
     <None Include="Resources\Map\Stage5.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Resources\Map\Stage6.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Resources\Other\GameClear.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
