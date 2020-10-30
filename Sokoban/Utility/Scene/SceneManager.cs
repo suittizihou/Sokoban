@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Sokoban
 {
@@ -33,7 +29,7 @@ namespace Sokoban
             End();
 
             // シーン切り替え時保持しているゲームオブジェクトのisDeadフラグを全部立てて死亡させる
-            foreach(var obj in currentScene.ObjectManager.GetAllGameObject())
+            foreach (var obj in currentScene.ObjectManager.GetAllGameObject())
             {
                 obj.isDead = true;
             }

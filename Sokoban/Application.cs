@@ -1,7 +1,7 @@
-﻿using System;
+﻿using DxLibDLL;
+using System;
 using System.Diagnostics;
 using System.Threading;
-using DxLibDLL;
 
 namespace Sokoban
 {

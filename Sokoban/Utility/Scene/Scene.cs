@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Sokoban
+﻿namespace Sokoban
 {
     public abstract class Scene : ISceneState
     {
@@ -36,12 +30,12 @@ namespace Sokoban
         /// </summary>
         /// <param name="sendValues">前シーンから送られた値が入っている配列</param>
         public abstract void Init(object[] sendValues);
-        
+
         /// <summary>
         /// 更新
         /// </summary>
         public abstract void Update();
-        
+
         /// <summary>
         /// 描画
         /// </summary>

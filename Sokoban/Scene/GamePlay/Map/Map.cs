@@ -1,5 +1,4 @@
-﻿using System.Management.Instrumentation;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace Sokoban
 {
@@ -29,7 +28,7 @@ namespace Sokoban
 
         private string filePath;
 
-        public Map(string filePath) 
+        public Map(string filePath)
         {
             this.filePath = filePath;
             // マップをロード
@@ -76,7 +75,7 @@ namespace Sokoban
         /// <returns></returns>
         public bool IsStaticMapChip(int x, int y)
         {
-            return MapChipType.None < GetMapChip(x, y) 
+            return MapChipType.None < GetMapChip(x, y)
                 && GetMapChip(x, y) <= MapChipType.Goal;
         }
 
@@ -150,10 +149,10 @@ namespace Sokoban
 
                 case DirectionType.Down:
                     return MapChipCheck(position + Vector2Int.down, mapChipTyep);
-                
+
                 case DirectionType.Right:
                     return MapChipCheck(position + Vector2Int.right, mapChipTyep);
-                
+
                 default:
                     return MapChipCheck(position + Vector2Int.left, mapChipTyep);
             }

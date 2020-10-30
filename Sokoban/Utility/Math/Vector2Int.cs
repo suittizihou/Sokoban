@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Sokoban
+﻿namespace Sokoban
 {
     public struct Vector2Int
     {
@@ -22,11 +16,11 @@ namespace Sokoban
         public static Vector2Int right => new Vector2Int(1, 0);
         public static Vector2Int left => new Vector2Int(-1, 0);
 
-        public static Vector2Int operator+ (Vector2Int lhs, Vector2Int rhs)
+        public static Vector2Int operator +(Vector2Int lhs, Vector2Int rhs)
         {
             return new Vector2Int(lhs.x + rhs.x, lhs.y + rhs.y);
         }
-        public static Vector2Int operator- (Vector2Int lhs, Vector2Int rhs)
+        public static Vector2Int operator -(Vector2Int lhs, Vector2Int rhs)
         {
             return new Vector2Int(lhs.x - rhs.x, lhs.y - rhs.y);
         }
@@ -35,11 +29,11 @@ namespace Sokoban
             return new Vector2Int(lhs.x * scalar, lhs.y * scalar);
         }
 
-        public static bool operator!= (Vector2Int lhs, Vector2Int rhs)
+        public static bool operator !=(Vector2Int lhs, Vector2Int rhs)
         {
             return lhs.x != rhs.x || lhs.y != rhs.y;
         }
-        public static bool operator== (Vector2Int lhs, Vector2Int rhs)
+        public static bool operator ==(Vector2Int lhs, Vector2Int rhs)
         {
             return lhs.x == rhs.x && lhs.y == rhs.y;
         }

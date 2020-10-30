@@ -19,7 +19,7 @@ namespace Sokoban
             sceneManager.AddScene(new StageSelect(new GameObjectManager(), sceneManager, SceneType.Select));
             sceneManager.AddScene(new GamePlay(new GameObjectManager(), sceneManager, SceneType.Play));
             sceneManager.AddScene(new GameClear(new GameObjectManager(), sceneManager, SceneType.Clear));
-            
+
             // 最初のシーンを切り替える(End呼ばれない)
             sceneManager.ChangeScene(SceneType.Title);
         }

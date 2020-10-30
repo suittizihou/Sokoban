@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Management.Instrumentation;
-using System.Runtime.InteropServices.WindowsRuntime;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Sokoban
+﻿namespace Sokoban
 {
     class MapManager
     {
@@ -37,7 +29,7 @@ namespace Sokoban
             // ゲームオブジェクトが０ならfalse
             if (objects.Count == 0) return false;
 
-            foreach(var obj in objects)
+            foreach (var obj in objects)
             {
                 if (obj.IsAnimation) return false;
             }
@@ -49,9 +41,9 @@ namespace Sokoban
         /// </summary>
         public void StartGeneration()
         {
-            for(int y = 0; y < map.GetMap().GetLength(0); y++)
+            for (int y = 0; y < map.GetMap().GetLength(0); y++)
             {
-                for(int x = 0; x < map.GetMap().GetLength(1); x++)
+                for (int x = 0; x < map.GetMap().GetLength(1); x++)
                 {
                     GameObjectGeneration(map.GetMapChip(x, y), new Vector2Int(x, y));
                 }
@@ -80,11 +72,11 @@ namespace Sokoban
         /// </summary>
         public void DrawStaticMapChip(float offset = 0.0f)
         {
-            for(int y = 0; y < map.GetMap().GetLength(0); y++)
+            for (int y = 0; y < map.GetMap().GetLength(0); y++)
             {
-                for(int x = 0; x < map.GetMap().GetLength(1); x++)
+                for (int x = 0; x < map.GetMap().GetLength(1); x++)
                 {
-                    if(map.IsStaticMapChip(x, y))
+                    if (map.IsStaticMapChip(x, y))
                     {
                         Image.DrawMapChip(x + offset, y + offset, map.GetMapChip(x, y));
                     }

@@ -1,13 +1,4 @@
-﻿using DxLibDLL;
-using System;
-using System.Collections.Generic;
-using System.Collections.Specialized;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Sokoban
+﻿namespace Sokoban
 {
     public abstract class GameObject
     {
@@ -17,7 +8,7 @@ namespace Sokoban
 
         protected Map map;
         protected MapChipType mapChipType;
-        
+
         protected Vector2Int currentPosition;
         protected Vector2Int nextPosition;
         protected Vector2 animePosition;
@@ -25,7 +16,7 @@ namespace Sokoban
         public bool IsAnimation { get; private set; }
         public bool isGoal;
         public bool isDead;
-        
+
         public GameObject(IGameObjectManager gameObjectManager, Map map, Vector2Int position, MapChipType mapChipType)
         {
             this.map = map;

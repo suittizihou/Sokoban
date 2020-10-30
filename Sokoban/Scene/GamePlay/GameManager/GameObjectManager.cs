@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Sokoban
 {
@@ -33,7 +29,7 @@ namespace Sokoban
         {
             foreach (var obj in gameObjects)
             {
-                if(obj.GetPosition() == position)
+                if (obj.GetPosition() == position)
                 {
                     return obj;
                 }
@@ -43,9 +39,9 @@ namespace Sokoban
         public List<GameObject> GetGameObjects(MapChipType mapChipType)
         {
             List<GameObject> temp = new List<GameObject>();
-            foreach(var obj in gameObjects)
+            foreach (var obj in gameObjects)
             {
-                if(obj.GetMapChip() == mapChipType)
+                if (obj.GetMapChip() == mapChipType)
                 {
                     temp.Add(obj);
                 }
@@ -63,7 +59,7 @@ namespace Sokoban
         /// </summary>
         public void DestroyObject()
         {
-            gameObjects.RemoveAll(delegate(GameObject obj)
+            gameObjects.RemoveAll(delegate (GameObject obj)
             {
                 if (obj.isDead)
                 {
@@ -82,7 +78,7 @@ namespace Sokoban
 
         public void AnimeUpdate()
         {
-            foreach(var obj in gameObjects)
+            foreach (var obj in gameObjects)
             {
                 obj.AnimeUpdate();
             }
@@ -90,7 +86,7 @@ namespace Sokoban
 
         public void Update()
         {
-            foreach(var obj in gameObjects)
+            foreach (var obj in gameObjects)
             {
                 obj.Update();
             }
@@ -98,7 +94,7 @@ namespace Sokoban
 
         public void Draw()
         {
-            foreach(var obj in gameObjects)
+            foreach (var obj in gameObjects)
             {
                 obj.Draw();
             }

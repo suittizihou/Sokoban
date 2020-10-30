@@ -1,11 +1,6 @@
 ﻿using DxLibDLL;
 using MyLib;
-using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Sokoban
 {
@@ -39,11 +34,11 @@ namespace Sokoban
 
         public override void Draw()
         {
-            for(int fileNum = 0; fileNum < stageDataFileNames.Length; fileNum++)
+            for (int fileNum = 0; fileNum < stageDataFileNames.Length; fileNum++)
             {
                 int blueColor = 255;
                 if (select == fileNum) blueColor = 0;
-                
+
                 DX.DrawString(50, fileNum * 32, stageDataFileNames[fileNum], DX.GetColor(255, 255, blueColor));
             }
         }

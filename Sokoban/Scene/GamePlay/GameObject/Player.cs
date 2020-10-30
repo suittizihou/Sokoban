@@ -1,5 +1,4 @@
-﻿using System;
-using DxLibDLL;
+﻿using DxLibDLL;
 using MyLib;
 
 namespace Sokoban
@@ -15,7 +14,7 @@ namespace Sokoban
 
         public override void Init()
         {
-            
+
         }
 
         public override void Update()
